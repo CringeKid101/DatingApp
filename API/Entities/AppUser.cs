@@ -1,0 +1,12 @@
+using System;
+using System.Diagnostics.CodeAnalysis;
+
+namespace API.Entities;
+
+public class AppUser
+{
+public string Id { get; set; } = Guid.NewGuid().ToString();
+public required string Name { get; set; }
+public required string Email { get; set; }
+
+}
